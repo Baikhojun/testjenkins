@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="system.code">
+	<!-- 공통코드검색 -->
+    <select id="getCommonCode" parameterType="jsonObject" resultType="jsonObject" statementType="CALLABLE">
+        {CALL dbo.COR_BaseCodeDDL_SELECT(
+          #{param1},
+          #{param2},
+          #{param3},
+          #{param4},
+          #{param5},
+          #{param6},
+          #{param7}
+        )}
+    </select>
+    
+	<!-- 학과코드검색 -->
+    <select id="getDeptCode" parameterType="jsonObject" resultType="jsonObject" statementType="CALLABLE">
+        {CALL dbo.COR_SoSogByGwanliDDL_SELECT_PopUp(
+        	#{Sabeon},            
+ 			#{RoleUseYn}           
+        )}
+    </select>
+    
+    <!--  학과코드검색(평생) -->
+        <select id="getPsDeptCode" parameterType="jsonObject" resultType="jsonObject" statementType="CALLABLE">
+        {CALL dbo.COR_SoSogByGwanliDDL_SPS_SELECT_PopUp(
+        	#{Sabeon},            
+ 			#{RoleUseYn}           
+        )}
+    </select>
+ 
+</mapper>
+  

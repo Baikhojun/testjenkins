@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="system.account">
+	
+	<select id="getUserInfo" parameterType="jsonObject" resultType="jsonObject">
+	    SELECT 
+			A.USER_IDNT,
+			B.USER_KRNM
+		FROM 	CA1000 A, VW1000 B
+		WHERE 	A.USER_IDNT = B.USER_IDNT 
+	    AND 	A.USER_IDNT = #{USER_IDNT} AND A.USER_PSWD = #{USER_PSWD}
+	</select>
+	
+	<resultMap id="sessionInfo" type="jsonObject"></resultMap>
+	
+	<select id="getUserInfoForAddSession" parameterType="jsonObject" resultType="jsonObject" statementType="CALLABLE">
+		{CALL DUC_DEV.SG_GAT_LOGININFO_SELECT(
+			   #{USER_IDNT}
+			 , #{C_RESULT, mode=OUT, jdbcType=CURSOR, javaType=java.sql.ResultSet, resultMap=sessionInfo}
+			 , #{OUT_ERR_CD, mode=OUT, jdbcType=VARCHAR, javaType=string}
+			 , #{OUT_ERR_MSG, mode=OUT, jdbcType=VARCHAR, javaType=string}
+		)}
+	</select>
+	
+	<select id="getUserInfoForMainPopup" parameterType="jsonObject" resultType="jsonObject">
+	    {CALL dbo.ADM_AIS001P_SELECT(#{SESSION_USER_IDNT})}
+	</select>
+	
+	<select id="setUserInfoForMainPopup" parameterType="jsonObject" resultType="jsonObject" statementType="CALLABLE">
+	    {CALL dbo.ADM_AIS001P_PROCESS(
+	      #{SESSION_USER_IDNT},
+	      #{NmEng},
+	      #{TelNo},
+	      #{Mobile},
+	      #{GyoNaeNo},
+	      #{ZipNo},
+	      #{Juso1},
+	      #{Juso2},
+	      #{EngJuso1},
+	      #{EngJuso2},
+	      #{Email},
+	      #{Email_2nd},
+	      #{Pwd1},
+	      #{JilmunGb},
+	      #{Dabbyeon},
+	      #{Fax},
+	      #{Pwdold},
+	      #{SESSION_USER_IDNT},
+	      #{RESULT_MSG, mode=OUT, jdbcType=VARCHAR, javaType=string}
+	    )}
+	</select>
+	
+<!-- 	<resultMap id="selectUser" type="jsonObject"> -->
+<!-- 		<result property="USERID" column="USERID"/> -->
+<!-- 		<result property="USERNM" column="USERNM"/> -->
+<!-- 	</resultMap> -->
+	
+	<resultMap id="selectUser" type="jsonObject"></resultMap>
+	
+<!-- 	<select id="selectLoginUser" parameterType="jsonObject" resultType="jsonObject"> -->
+	<select id="selectLoginUser" parameterType="jsonObject" resultType="jsonObject" statementType="CALLABLE">
+<!-- 	<select id="selectLoginUser" statementType="CALLABLE" parameterType="jsonObject" resultMap="selectUser"> -->
+<!-- 		SELECT USERID -->
+<!-- 			 , USERNM -->
+<!-- 		  FROM DUC_DEV.CMM_USER_M -->
+<!-- 		 WHERE USERID = #{LOGIN_ID} -->
+<!-- 		   AND PASSWORD = #{LOGIN_PWD} -->
+		{CALL DUC_DEV.SP_LOGIN_S01(
+			   #{LOGIN_ID}
+			 , #{LOGIN_PWD}
+			 , #{OUT_ERR_CD, mode=OUT, jdbcType=VARCHAR, javaType=string}
+			 , #{OUT_ERR_MSG, mode=OUT, jdbcType=VARCHAR, javaType=string}
+			 , #{C_RESULT, mode=OUT, jdbcType=CURSOR, javaType=java.sql.ResultSet, resultMap=selectUser}
+		)}
+	</select>
+
+</mapper>

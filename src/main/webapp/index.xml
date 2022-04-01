@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ev="http://www.w3.org/2001/xml-events"
+    xmlns:w2="http://www.inswave.com/websquare" xmlns:xf="http://www.w3.org/2002/xforms">
+    <head>
+    	<w2:type>DEFAULT</w2:type>
+        <w2:buildDate/>
+        <xf:model>
+            <xf:instance>
+                <data xmlns=""/>
+            </xf:instance>
+            <w2:dataCollection baseNode="map">
+            	<w2:dataList baseNode="list" repeatNode="map" id="dataList1" saveRemovedData="true"></w2:dataList>
+            </w2:dataCollection>
+            <w2:workflowCollection>
+            </w2:workflowCollection>
+        </xf:model>
+         <script type="text/javascript" lazy="false"><![CDATA[
+
+	
+	]]></script>
+    </head>
+    <body ev:onpageload="scwin.onpageload" ev:onpageunload="scwin.onpageunload">
+    	<xf:group class="w2tb" id="" style="width:1000px;margin:0 auto;" tagname="table">
+    		<w2:attributes>
+    			<w2:summary></w2:summary>
+    		</w2:attributes>
+    		<xf:group tagname="caption"></xf:group>
+    		<xf:group tagname="colgroup">
+    			<xf:group style="width:150px;" tagname="col"></xf:group>
+    			<xf:group style="width:33.33%;" tagname="col"></xf:group>
+    			<xf:group style="width:33.33%" tagname="col"></xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group class="w2tb_th" style="" tagname="th">
+    				Layout
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td">
+    				<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/layout.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[layout.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				main
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/main.xml" id="" outerDiv="false" style="" target="blank">
+    					<xf:label><![CDATA[main.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group class="w2tb_th" style="" tagname="th">
+    				Component
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td"></xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td">
+    				<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes>
+    				<w2:anchor outerDiv="false" style="" id="" href="/websquare/websquare.html?w2xPath=/template/component.xml"
+    					target="blank">
+    					<xf:label><![CDATA[component.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group class="w2tb_th" style="" tagname="th">
+    				Template
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td">롤별메뉴관리</xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td">
+    				<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/template1.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[template1.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				사용자관리
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/template2.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[template2.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				코드관리
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/template3.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[template3.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				전공관리
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/template4.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[template4.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				메뉴관리
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/template5.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[template5.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				레이어팝업
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/popup1.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[popup1.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group class="w2tb_th" style="" tagname="th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td">Quick&amp;nbsp;Menu</xf:group>
+    			<xf:group class="w2tb_td" style="" tagname="td">
+    				<w2:attributes>
+    					<w2:scope>col</w2:scope>
+    				</w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/quick.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[quick.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				학적정보조회&amp;nbsp;-&amp;nbsp;2019.11.14&amp;nbsp;추가작업
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/template6.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[template6.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group tagname="tr" style="">
+    			<xf:group tagname="th" class="w2tb_th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				사진팝업&amp;nbsp;-&amp;nbsp;2019.11.14&amp;nbsp;신규작업
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group tagname="td" class="w2tb_td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/pop_photo.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[pop_photo.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    		<xf:group style="" tagname="tr">
+    			<xf:group class="w2tb_th" tagname="th">
+    				<w2:attributes>
+    					<w2:scope>row</w2:scope>
+    				</w2:attributes>
+    			</xf:group>
+    			<xf:group class="w2tb_td" tagname="td">
+    				상단&amp;nbsp;검색&amp;nbsp;영역&amp;nbsp;-&amp;nbsp;2019.11.14&amp;nbsp;추가작업
+    				<w2:attributes></w2:attributes>
+    			</xf:group>
+    			<xf:group class="w2tb_td" tagname="td">
+    				<w2:attributes></w2:attributes>
+    				<w2:anchor href="/websquare/websquare.html?w2xPath=/template/top_sch.xml" id="" outerDiv="false" style=""
+    					target="blank">
+    					<xf:label><![CDATA[top_sch.xml]]></xf:label>
+    				</w2:anchor>
+    			</xf:group>
+    		</xf:group>
+    	</xf:group>
+    </body>
+</html>
